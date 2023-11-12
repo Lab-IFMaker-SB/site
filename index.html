@@ -11,80 +11,80 @@
         body {
             font-family: Arial, sans-serif;
         }
-        .top-nav {
-            background-color: #f8f9fa;
-            padding: 0.5rem 1rem;
-        }
-        .top-nav a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 1rem;
-        }
-        .top-nav a:hover {
-            color: #0056b3;
-        }
         .navbar {
             margin-bottom: 1rem;
+            background-color: #f8f9fa;
         }
         .navbar-brand img {
-            height: 60px;
+            height: 40px; /* Ajuste conforme o tamanho da sua logo */
         }
         .nav-link {
             color: #333;
-            font-weight: bold;
+            margin-right: 10px;
         }
         .nav-link:hover {
             color: #0056b3;
         }
-        footer {
-            background-color: #f8f9fa;
-            padding: 1rem 0;
-            text-align: center;
-            margin-top: 2rem;
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .5rem;
+            padding-left: .5rem;
         }
-        .content-section {
-            padding: 2rem 0;
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
         }
     </style>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="top-nav d-flex justify-content-between">
-            <div>
-                <a href="#">Institucional</a>
-                <a href="#">Acesso à Informação</a>
-                <!-- Outros links institucionais aqui -->
-            </div>
-            <div>
-                <!-- Ícones de acessibilidade e redes sociais aqui -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo LAB IF MAKER"> <!-- Substitua logo.png pelo caminho da sua imagem de logo -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como Participar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agenda do IFMaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria IFMaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publicações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="Logo"> <!-- Substitua logo.png pelo caminho da sua imagem de logo -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Sobre</a>
-                        <!-- Outros itens de navegação aqui -->
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="container content-section">
-        <h1>Bem-vindo ao LAB IF MAKER</h1>
-        <!-- Conteúdo principal da página -->
-    </main>
-    <footer>
-        <!-- Conteúdo do rodapé aqui -->
-        &copy; 2023 LAB IF MAKER - IFFar Campus São Borja
-    </footer>
+    </nav>
+
+    <!-- Seu conteúdo principal vai aqui -->
+
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.11/dist/umd/popper.min.js"></script>
