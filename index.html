@@ -4,69 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAB IF MAKER - IFFar Campus São Borja</title>
-    <!-- Inclusão do Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .top-nav {
+            background-color: #f8f9fa;
+            padding: 0.5rem 1rem;
+        }
+        .top-nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        .top-nav a:hover {
+            color: #0056b3;
+        }
+        .navbar {
+            margin-bottom: 1rem;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+        .nav-link {
+            color: #333;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: #0056b3;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .content-section {
+            padding: 2rem 0;
+        }
+    </style>
 </head>
 <body>
     <header class="container-fluid">
-        <!-- Barra superior com links institucionais -->
-        <div class="row bg-light py-2">
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <div class="institutional-links">
-                        <a href="#" class="text-dark">Institucional</a>
-                        <a href="#" class="text-dark">Acesso à Informação</a>
-                        <!-- Outros links institucionais aqui -->
-                    </div>
-                    <div class="header-icons">
-                        <!-- Ícones de acessibilidade e redes sociais aqui -->
-                    </div>
-                </div>
+        <div class="top-nav d-flex justify-content-between">
+            <div>
+                <a href="#">Institucional</a>
+                <a href="#">Acesso à Informação</a>
+                <!-- Outros links institucionais aqui -->
+            </div>
+            <div>
+                <!-- Ícones de acessibilidade e redes sociais aqui -->
             </div>
         </div>
-        <!-- Navegação principal -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="Logo" style="height: 40px;"> <!-- Substitua logo.png pelo caminho da sua imagem de logo -->
+                    <img src="logo.png" alt="Logo"> <!-- Substitua logo.png pelo caminho da sua imagem de logo -->
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projetos.html">Projetos</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Sobre</a>
                         <!-- Outros itens de navegação aqui -->
-                    </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <!-- Conteúdo principal da página -->
-    <main class="container mt-4">
+    <main class="container content-section">
         <h1>Bem-vindo ao LAB IF MAKER</h1>
-        <!-- Conteúdo do site aqui -->
+        <!-- Conteúdo principal da página -->
     </main>
-
-    <!-- Rodapé -->
-    <footer class="bg-light text-center text-lg-start">
+    <footer>
         <!-- Conteúdo do rodapé aqui -->
+        &copy; 2023 LAB IF MAKER - IFFar Campus São Borja
     </footer>
-
-    <!-- Inclusão do jQuery e Bootstrap JS -->
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.11/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
