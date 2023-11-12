@@ -1,0 +1,33 @@
+/* Custom styles for the website */
+.institutional-links a {
+    margin-right: 15px;
+    color: #333; /* Dark text for better contrast */
+}
+
+.institutional-links a:hover {
+    text-decoration: none;
+    color: #0056b3; /* Highlight color on hover */
+}
+
+.header-icons {
+    /* Add styles for your accessibility and social media icons here */
+}
+
+.navbar .navbar-brand img {
+    max-height: 80px; /* Adjust the size of the logo */
+}
+
+/* Adjustments for nav items to match the provided design */
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: bold; /* Bold font for nav items */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0056b3; /* Highlight color on hover */
+}
+
+/* Footer styling */
+footer {
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light
